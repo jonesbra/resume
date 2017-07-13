@@ -13,6 +13,10 @@ var LISTEN_PORT = '8080'
 // Serve the static files
 app.use(express.static('src'))
 
+// redirect if nothing else sent a response
+app.use(function redirectUnmatched(req, res) {
+  res.redirect("http://www.bjones.me/")
+})
 
 // Serve the app on the LISTEN_PORT
 app.listen(LISTEN_PORT)
