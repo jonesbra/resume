@@ -1,9 +1,151 @@
-<div style="padding: 10px; text-align: center; border: 1px solid black; margin: 10em; border-radius: 20px">
-  <h2 class="ui icon header" style="padding: 10px">
-    <i class="settings icon"></i>
-    <div class="content">
-      Still Engineering!
-      <div class="sub header">This page is still under development, check my <a href="https://github.com/jonesbra/resume">Github</a> out for updates!</div>
+<div style="padding: 10px; text-align: center;">
+  <!-- GPA/Credit Hours and Stuff -->
+  <div style="margin-bottom: 10px">
+    <div class="ui three column grid">
+      <div class="column">
+        <div class="ui fluid card">
+          <div class="content" style="background-color: #F2F2F2">
+            <a class="header">GPA</a>
+          </div>
+          <div class="content">
+            <div class="description">
+              <strong style="font-size: 18px">3.1</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui fluid card">
+          <div class="content" style="background-color: #F2F2F2">
+            <a class="header">Credit Hours</a>
+          </div>
+          <div class="content">
+            <div class="description">
+              <strong style="font-size: 18px">72</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui fluid card">
+          <div class="content" style="background-color: #F2F2F2">
+            <a class="header">Work Experience</a>
+          </div>
+          <div class="content">
+            <div class="description">
+              <strong style="font-size: 18px">1.5 Years</strong>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </h2>
+  </div>
+
+  <div style="height: 30em; overflow-y: scroll">
+    <table class="ui celled padded table">
+      <thead>
+        <tr>
+        <th class="single line">Course</th>
+        <th class="single line">Grade</th>
+        <th class="single line">Description</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td>
+            <select class="ui dropdown" style="width: 10em">
+              <option ng-repeat='course in ["Calculus 1", "Calculus 2", "Calculus 3", "Calculus 4"] track by $index'>{{ course }}</option>
+            </select>
+          </td>
+          <td>
+            <h2 class="ui center aligned header">A</h2>
+          </td>
+          <td>Description about Calculus ...</td>
+        </tr>
+        <tr>
+          <td>
+            Fluid Mechanics
+          </td>
+          <td>
+            <h2 class="ui center aligned header">A</h2>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            Statics
+          </td>
+          <td>
+            <h2 class="ui center aligned header">A</h2>
+          </td>
+          <td> This class sucked</td>
+        </tr>
+        <tr>
+          <td>
+            <select class="ui dropdown" style="width: 11em">
+              <option ng-repeat='course in ["Thermodynamics 1", "Thermodynamics 2"] track by $index'>{{ course }}</option>
+            </select>
+          </td>
+          <td>
+            <h2 class="ui center aligned header">A</h2>
+          </td>
+          <td>Description about Calculus ...</td>
+        </tr>
+        <tr>
+          <td>
+            <select class="ui dropdown" style="width: 11em">
+              <option ng-repeat='course in ["Thermodynamics 1", "Thermodynamics 2"] track by $index'>{{ course }}</option>
+            </select>
+          </td>
+          <td>
+            <h2 class="ui center aligned header">A</h2>
+          </td>
+          <td>Description about Calculus ...</td>
+        </tr>
+        <tr>
+          <td>
+            <select class="ui dropdown" style="width: 11em">
+              <option ng-repeat='course in ["Thermodynamics 1", "Thermodynamics 2"] track by $index'>{{ course }}</option>
+            </select>
+          </td>
+          <td>
+            <h2 class="ui center aligned header">A</h2>
+          </td>
+          <td>Description about Calculus ...</td>
+        </tr>
+        <tr>
+          <td>
+            <select class="ui dropdown" style="width: 11em">
+              <option ng-repeat='course in ["Thermodynamics 1", "Thermodynamics 2"] track by $index'>{{ course }}</option>
+            </select>
+          </td>
+          <td>
+            <h2 class="ui center aligned header">A</h2>
+          </td>
+          <td>Description about Calculus ...</td>
+        </tr>
+        <tr>
+          <td>
+            <select class="ui dropdown" style="width: 11em">
+              <option ng-repeat='course in ["Thermodynamics 1", "Thermodynamics 2"] track by $index'>{{ course }}</option>
+            </select>
+          </td>
+          <td>
+            <h2 class="ui center aligned header">A</h2>
+          </td>
+          <td>Description about Calculus ...</td>
+        </tr>
+        <tr>
+          <td>
+            <select class="ui dropdown" style="width: 11em">
+              <option ng-repeat='course in ["Thermodynamics 1", "Thermodynamics 2"] track by $index'>{{ course }}</option>
+            </select>
+          </td>
+          <td>
+            <h2 class="ui center aligned header">A</h2>
+          </td>
+          <td>Description about Calculus ...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
