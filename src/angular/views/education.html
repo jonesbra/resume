@@ -2,26 +2,26 @@
   <!-- GPA/Credit Hours and Stuff -->
   <div style="margin-bottom: 10px">
     <div class="ui three column grid">
-      <div class="column">
+      <div class="column" ng-controller="transcriptCtrl">
         <div class="ui fluid card">
           <div class="content" style="background-color: #F2F2F2">
             <a class="header">GPA</a>
           </div>
           <div class="content">
             <div class="description">
-              <strong style="font-size: 18px">3.1</strong>
+              <strong style="font-size: 18px" ng-bind="getGPA()"></strong>
             </div>
           </div>
         </div>
       </div>
-      <div class="column">
+      <div class="column" ng-controller='transcriptCtrl'>
         <div class="ui fluid card">
           <div class="content" style="background-color: #F2F2F2">
             <a class="header">Credit Hours</a>
           </div>
           <div class="content">
             <div class="description">
-              <strong style="font-size: 18px">72</strong>
+              <strong style="font-size: 18px" ng-bind="getCreditHours()"></strong>
             </div>
           </div>
         </div>
