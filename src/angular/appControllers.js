@@ -352,15 +352,15 @@ app.controller('transcriptCtrl', function($scope, $http) {
     // Semester 7
     {
       semester: 7,
-      year: "2017",
+      year: "2018",
       season: "Fall",
-      completed: false,
+      completed: true,
       courses: [
         {
           name: 'Dynamics',
           prefix: "EM",
           number: "313",
-          grade: undefined,
+          grade: "D",
           hours: 3,
           passFail: false
         },
@@ -368,7 +368,7 @@ app.controller('transcriptCtrl', function($scope, $http) {
           name: 'Elements Of Heat Transfer',
           prefix: "ME",
           number: "325",
-          grade: undefined,
+          grade: "D",
           hours: 3,
           passFail: false
         },
@@ -376,7 +376,7 @@ app.controller('transcriptCtrl', function($scope, $http) {
           name: 'Mechanical Design',
           prefix: "ME",
           number: "344",
-          grade: undefined,
+          grade: "C",
           hours: 3,
           passFail: false
         },
@@ -384,15 +384,7 @@ app.controller('transcriptCtrl', function($scope, $http) {
           name: 'Introduction To Mechanical Systems',
           prefix: "ME",
           number: "340",
-          grade: undefined,
-          hours: 3,
-          passFail: false
-        },
-        {
-          name: 'Algorithm Design/Analysis',
-          prefix: "CS",
-          number: "315",
-          grade: undefined,
+          grade: "D",
           hours: 3,
           passFail: false
         },
@@ -400,7 +392,7 @@ app.controller('transcriptCtrl', function($scope, $http) {
           name: 'Computer Aided Engineering Graphics',
           prefix: "ME",
           number: "205",
-          grade: undefined,
+          grade: "C",
           hours: 3,
           passFail: false
         }
@@ -414,8 +406,8 @@ app.controller('transcriptCtrl', function($scope, $http) {
     var qualityHours = 0
 
     // Loop through all of the semesters recorded in the transcript
-    for (var sem=0; sem<$scope.transcript.length; sem++) {
-      let semester = $scope.transcript[sem]
+    for (var s=0; s<$scope.transcript.length; s++) {
+      let semester = $scope.transcript[s]
       // Check that the semester has been completed
       if (semester.completed) {
         for (var c=0; c<semester.courses.length; c++) {
