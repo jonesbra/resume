@@ -15,7 +15,7 @@ app.use(express.static('src'))
 
 // redirect if nothing else sent a response
 app.use(function redirectUnmatched(req, res) {
-  res.redirect("http://www.bjones.me/")
+  res.redirect("http://www.brandondjones.me/")
 })
 
 // Serve the app on the LISTEN_PORT
